@@ -1,0 +1,17 @@
+@mixin sprite($ratio:1) {
+	display: inline-block;
+	overflow: hidden;
+	background-repeat: no-repeat;
+	background-image: url('{{spritesheet.escaped_image}}');
+	background-size: ({{spritesheet.px.width}} * $ratio) ({{spritesheet.px.height}} * $ratio);
+}
+
+{{#sprites}}
+@mixin sprite-{{name}}($ratio:1) {
+	@include sprite($ratio);
+	width: ({{px.width}} * $ratio);
+	height: ({{px.height}} * $ratio);
+	background-position: ({{px.offset_x}} * $ratio) ({{px.offset_y}} * $ratio);
+}
+
+{{/sprites}}

@@ -1,7 +1,9 @@
-var path            = require('path')
-var utils           = require('./utils')
-var config          = require('../config')
-var vueLoaderConfig = require('./vue-loader.conf')
+const path              = require('path');
+const utils             = require('./utils');
+const config            = require('../config');
+const vueLoaderConfig   = require('./vue-loader.conf');
+const SpritesmithPlugin = require('webpack-spritesmith');
+const spritesFolder     = path.resolve('src/sprites');
 
 function resolve(dir)
 {
@@ -89,5 +91,30 @@ module.exports = {
                 }
             }
         ]
-    }
-}
+    },
+    plugins: [
+        new SpritesmithPlugin({
+            src: {
+                cwd: path.resolve(spritesFolder, 'images'),
+                glob: '*.png'
+            },
+            target: {
+                image: path.resolve(spritesFolder, 'generated/sprite.png'),
+                css: [
+                    [path.resolve(spritesFolder, 'generated/sprite.less'), {format: 'less_handlebars_template'}]
+                ]
+            },
+            apiOptions: {
+                cssImageRef: "./sprite.png"
+            },
+            spritesmithOptions: {
+                algorithm: 'binary-tree',
+                padding:   2,
+            },
+            customTemplates: {
+                'less_handlebars_template': path.resolve('build/templates', 'sprite.less.handlebars'),
+                'scss_handlebars_template': path.resolve('build/templates', 'sprite.scss.handlebars'),
+            },
+        })
+    ]
+};

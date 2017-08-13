@@ -12,7 +12,7 @@ yarn-error.log*
 *.njsproj
 *.sln
 
-# Lock files
+# Lock files (should not be included in boilerplate projects)
 package-lock.json
 
 # Generated

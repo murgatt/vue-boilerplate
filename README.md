@@ -5,7 +5,23 @@ A simple Vue.js boilerplate with awesome tools.
 ## Tools
 
 ### Vue Router
-This boilerplate comes with [vue-router](https://router.vuejs.org/), a simple route system based on vue components.
+This boilerplate comes with [vue-router](https://router.vuejs.org/), a simple route system based on vue components. Routes can be defined inside `src/router/index.js` :
+```javascript
+import MyPageComponent from '@/pages/MyPage';
+export default new Router({
+    routes: [
+        ...
+        {
+            path:      '/pathToYourPage',
+            name:      'PageName',
+            component: MyPageComponent
+        },
+        ...
+    ]
+});
+```
+In order to separate "pages" components from "basic" components, "pages" components files are created in the `src/pages` folder.
+
 
 ### [webpack-spritesmith](https://www.npmjs.com/package/webpack-spritesmith) 
 > Webpack plugin that converts set of images into a spritesheet and SASS/LESS/Stylus mixins, using [spritesmith](https://github.com/Ensighten/spritesmith) and [spritesheet-templates](https://github.com/twolfson/spritesheet-templates)

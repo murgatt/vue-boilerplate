@@ -10,7 +10,8 @@
 			<li><a href="https://gitter.im/vuejs/vue" target="_blank">Gitter Chat</a></li>
 			<li><a href="https://twitter.com/vuejs" target="_blank">Twitter</a></li>
 			<br>
-			<li><a href="http://vuejs-templates.github.io/webpack/" target="_blank">Docs for This Template</a></li>
+			<li><a href="https://github.com/murgatt/vue-boilerplate" target="_blank">Boilerplate Docs</a></li>
+			<li><a href="http://vuejs-templates.github.io/webpack/" target="_blank">Docs for This "vue-cli" Template</a></li>
 		</ul>
 		<h2>Ecosystem</h2>
 		<ul>
@@ -28,7 +29,7 @@
         data()
         {
             return {
-                msg: 'Welcome to Your Vue.js App'
+                msg: 'Welcome to Your Vue.js App created from a simple boilerplate'
             }
         }
     }
@@ -48,9 +49,5 @@
 	li {
 		display: inline-block;
 		margin:  0 10px;
-	}
-
-	a {
-		color: #42b983;
 	}
 </style>

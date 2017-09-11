@@ -1,5 +1,6 @@
 <template>
 	<div class="hello">
+		<img src="../assets/logo.png">
 		<h1>{{ msg }}</h1>
 		<router-link to="/examplePage">Go to example page</router-link>
 		<h2>Essential Links</h2>

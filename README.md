@@ -4,9 +4,11 @@ A simple Vue.js boilerplate with awesome tools.
 
 ## Tools
 
-### Vue Router [Docs](https://router.vuejs.org/)
-This boilerplate comes with vue-router, a simple route system based on vue components.
+### Vue Router
+This boilerplate comes with [vue-router](https://router.vuejs.org/), a simple route system based on vue components.
 
+### [webpack-spritesmith](https://www.npmjs.com/package/webpack-spritesmith) 
+> Webpack plugin that converts set of images into a spritesheet and SASS/LESS/Stylus mixins, using [spritesmith](https://github.com/Ensighten/spritesmith) and [spritesheet-templates](https://github.com/twolfson/spritesheet-templates)
 
 ## Build Setup
 

@@ -38,7 +38,32 @@ With the default generated mixins, a value can be passed to specify the ratio of
 ```  
 In this boilerplate, the plugin use a custom template file to generate mixins. 
 There are two templates available (a LESS and a SASS template) inside the `build/templates` folder, you can add your own template.
-You can configure the plugins and the templates wanted inside `build/webpack.base.conf.js`. 
+You can configure the plugins and the templates wanted inside `build/webpack.base.conf.js`.
+
+### Image minification
+Based on [imagemin](https://github.com/imagemin/imagemin), [image-webpack-loader](https://github.com/tcoopman/image-webpack-loader) is included to this boilerplate to minify PNG, JPEG, GIF and SVG images.
+You can configure your minification preferences inside `build/webpack.base.conf.js`.
+```javascript
+// Default options
+options: {
+    bypassOnDebug: true,
+    svgo: {
+        enabled: false,
+    },
+    gifsicle: {
+        enabled: false,
+    },
+    mozjpeg: {
+        enabled: true,
+        quality: 70,
+    },
+    optipng: {
+        enabled: true,
+        optimizationLevel: 7,
+        interlaced: false,
+    },
+}
+```
 
 ## Build Setup
 

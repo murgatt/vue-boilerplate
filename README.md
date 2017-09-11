@@ -1,6 +1,18 @@
 # vue-boilerplate
 
-> A simple Vue.js boilerplate
+A simple Vue.js boilerplate with awesome tools.
+
+## Tools
+
+### Vue Router
+Bla bezoufb ouebf iubreiu fbzeoub fiezb fibre iugbreib giureb greui bguoireb gber ge.
+
+### Test Lorem
+Loozofnezo fboeb ubre pmbuze fpubze ubfzpeub fuzeb fubzepbfu zepb fzeon fzen fobzeb gzob gr.
+
+- Test : fbzeofbeouz bfz obfobzo fbzefb ozef obzobf ozebfob zouef 
+- Test : fre goinreo goern ofbezui bfoberg beib hger
+
 
 ## Build Setup
 

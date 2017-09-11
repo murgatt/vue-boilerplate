@@ -21,3 +21,4 @@ export default {
   margin-top: 60px;
 }
 </style>
+<style src="./styles/main.less" lang="less"></style>

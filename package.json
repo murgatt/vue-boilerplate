@@ -1,9 +1,9 @@
 {
   "name": "vue-boilerplate",
   "version": "1.0.0",
-  "description": "A simple Vue.js boilerplate",
+  "description": "A simple Vue.js boilerplate with awesome tools.",
   "author": "murgatt <theomurgat@hotmail.fr>",
-  "private": true,
+  "private": false,
   "scripts": {
     "dev": "node build/dev-server.js",
     "start": "node build/dev-server.js",

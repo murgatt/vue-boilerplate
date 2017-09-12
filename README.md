@@ -1,6 +1,10 @@
 # vue-boilerplate
 
-A simple Vue.js boilerplate with awesome tools.
+A simple Vue.js boilerplate with awesome tools based on the [VueJS Webpack template](https://github.com/vuejs-templates/webpack).  
+This boilerplate includes a full-featured Webpack + vue-loader setup with hot reload and css extraction.
+
+## Installation
+Simply clone or download the repository.
 
 ## Tools
 
@@ -63,6 +67,12 @@ options: {
         interlaced: false,
     },
 }
+```
+
+### LESS / SASS
+By default, the boilerplate is configured to use LESS but you can use SASS. Just install [node-sass](https://github.com/sass/node-sass) and [sass-loader](https://github.com/webpack-contrib/sass-loader).
+```
+npm install sass-loader node-sass --save-dev
 ```
 
 ## Build Setup

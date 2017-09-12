@@ -8,15 +8,15 @@
     export default {
         name: 'example-component',
 		components: {
-            
+
         },
 	    data() {
             return {
-                
+
             }
 	    },
 	    methods: {
-            
+
 	    },
     }
 </script>

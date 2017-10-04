@@ -7,7 +7,7 @@
 </template>
 
 <script>
-	import ExampleComponent from '@/components/ExampleComponent';
+	import ExampleComponent from '../components/ExampleComponent';
 
     export default {
         name: 'example-page',

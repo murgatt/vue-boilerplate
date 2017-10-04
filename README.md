@@ -4,14 +4,14 @@ A simple Vue.js boilerplate with awesome tools based on the [VueJS Webpack templ
 This boilerplate includes a full-featured Webpack + vue-loader setup with hot reload and css extraction.
 
 ## Installation
-Simply clone or download the repository.
+Simply clone or download this repository then `npm install`.
 
 ## Tools
 
 ### Vue Router
 This boilerplate comes with [vue-router](https://router.vuejs.org/), a simple route system based on vue components. Routes can be defined inside `src/router/index.js`:
 ```javascript
-import PageComponent from '@/pages/MyPage';
+import PageComponent from '../pages/MyPage';
 export default new Router({
     routes: [
         ...
@@ -25,6 +25,11 @@ export default new Router({
 });
 ```
 In order to separate "pages" components from "basic" components, "pages" components files are created in the `src/pages` folder.
+
+### Vuex
+> Vuex is a state management pattern + library for Vue.js applications.
+
+You can read the official documentation [here](https://vuex.vuejs.org/).
 
 
 ### [webpack-spritesmith](https://www.npmjs.com/package/webpack-spritesmith) 

@@ -4,6 +4,8 @@
   "description": "A simple Vue.js boilerplate with awesome tools.",
   "author": "murgatt <theomurgat@hotmail.fr>",
   "private": false,
+  "license": "MIT",
+  "repository": "https://github.com/murgatt/vue-boilerplate",
   "scripts": {
     "dev": "node build/dev-server.js",
     "start": "node build/dev-server.js",
